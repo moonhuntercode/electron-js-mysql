@@ -17,16 +17,16 @@ export default defineConfig({
     plugins: [externalizeDepsPlugin()],
     build: {
       rollupOptions: {
-        external: ['pg-hstore', 'pg']
+        external: ['electron', '@db/schema.js']
       }
     }
   },
   renderer: {
     resolve: {
       alias: {
-        '@renderer': resolve('src/renderer/src'),
-        '@main': resolve('src/main'),
-        sequelize: resolve('node_modules/sequelize/dist/sequelize.js') // Alias para sequelize
+        '@renderer': resolve('./src/renderer/src'),
+        '@main': resolve('./src/main'),
+        '@db': resolve('./src/main/db')
       }
     },
     plugins: [react()],

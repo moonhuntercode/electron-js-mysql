@@ -9,7 +9,7 @@
 export const login = async (data) => {
   try {
     await window.api.login(data)
-    console.log('✅ Inicio de sesión exitoso.')
+    console.log('  Inicio de sesión exitoso.')
   } catch (error) {
     console.error('❌ Error al iniciar sesión:', error)
     throw error // Propagar el error para manejarlo en el componente
@@ -24,7 +24,7 @@ export const login = async (data) => {
 export const logout = async (data) => {
   try {
     await window.api.logout(data)
-    console.log('✅ Cierre de sesión exitoso.')
+    console.log('  Cierre de sesión exitoso.')
   } catch (error) {
     console.error('❌ Error al cerrar sesión:', error)
     throw error // Propagar el error para manejarlo en el componente
@@ -39,7 +39,7 @@ export const logout = async (data) => {
 export const registerEmployee = async (data) => {
   try {
     await window.api.registerEmployee(data)
-    console.log('✅ Empleado registrado correctamente.')
+    console.log('  Empleado registrado correctamente.')
   } catch (error) {
     console.error('❌ Error al registrar empleado:', error)
     throw error // Propagar el error para manejarlo en el componente
@@ -53,7 +53,7 @@ export const registerEmployee = async (data) => {
 export const fetchLogs = async () => {
   try {
     const logs = await window.api.fetchLogs()
-    console.log('✅ Logs obtenidos correctamente.')
+    console.log('  Logs obtenidos correctamente.')
     return logs
   } catch (error) {
     console.error('❌ Error al obtener logs:', error)

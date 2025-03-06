@@ -47,7 +47,7 @@ const RegisterEmployee = ({ onCancel }) => {
     try {
       // Registrar el empleado
       await registerEmployee(formData)
-      alert('✅ Empleado registrado correctamente.')
+      alert('  Empleado registrado correctamente.')
       onCancel() // Volver al dashboard
     } catch (error) {
       alert('❌ Error al registrar empleado.')

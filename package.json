@@ -5,7 +5,9 @@
   "description": "An Electron application with React",
   "main": "./out/main/index.js",
   "homepage": "https://electron-vite.org",
+  "type": "module",
   "scripts": {
+    "mg": "drizzle-kit generate:mysql --config=./drizzle.config.js",
     "test": "vitest",
     "format": "prettier --write .",
     "lint": "eslint --cache .",
@@ -23,12 +25,12 @@
     "@electron-toolkit/utils": "^4.0.0",
     "@tensorflow/tfjs": "^4.22.0",
     "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.40.0",
     "electron-updater": "^6.3.9",
     "mysql2": "^3.12.0",
     "react-router": "^7.2.0",
     "react-toastify": "^11.0.5",
     "sanitize-filename": "^1.6.3",
-    "sequelize": "^6.37.6",
     "yup": "^1.6.1"
   },
   "devDependencies": {
@@ -37,6 +39,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@vitejs/plugin-react": "^4.3.4",
+    "drizzle-kit": "^0.30.5",
     "electron": "^34.2.0",
     "electron-builder": "^25.1.8",
     "electron-vite": "^3.0.0",

@@ -1,6 +1,6 @@
 // src/renderer/src/App.jsx
 
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Login from './views/Login'
@@ -31,7 +31,7 @@ function App() {
     try {
       setIsLoggedIn(true)
       changeView('dashboard')
-      toast.success('✅ Sesión iniciada correctamente.')
+      toast.success('  Sesión iniciada correctamente.')
     } catch (error) {
       console.error('❌ Error al iniciar sesión:', error)
       toast.error('❌ Error al iniciar sesión. Por favor, intenta nuevamente.')

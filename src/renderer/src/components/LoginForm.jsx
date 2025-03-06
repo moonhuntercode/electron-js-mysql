@@ -31,7 +31,7 @@ export const LoginForm = () => {
     try {
       // Enviar los datos al backend
       await login(formData)
-      alert('✅ Inicio de sesión exitoso.')
+      alert('  Inicio de sesión exitoso.')
     } catch (error) {
       alert('❌ Error al iniciar sesión.')
     } finally {
